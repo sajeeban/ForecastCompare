@@ -1,5 +1,5 @@
 '''
-Python script to compare forecast for 2 cities given via command line arguments. 
+Python script to compare forecast for 2 cities given via command line arguments.
 Program outputs a text indicating the temperatures of both cities
 '''
 
@@ -53,7 +53,7 @@ def get_forecast(city):
     return r
 
 
-# Comparing 2 city forecasts 
+# Comparing 2 city forecasts
 def compare_forecast(c1, c2):
     c1_name, c1_temp, c1_desc = c1['name'], int(c1['main']['temp']), c1['weather'][0]['description']
     c2_name, c2_temp, c2_desc = c2['name'], int(c2['main']['temp']), c2['weather'][0]['description']
